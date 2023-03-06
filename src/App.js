@@ -53,7 +53,7 @@ export class App extends React.Component {
   }
   setUpdate(text, key){
     const items = this.state.items;
-    items.map(item => {
+    items.map(item => {// eslint-disable-next-line
       if(item.key===key){
         item.text = text;
       }
